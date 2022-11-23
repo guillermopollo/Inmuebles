@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.examenfinalfinal.PrimaryController">
+   <children>
+      <Label layoutX="25.0" layoutY="24.0" prefHeight="26.0" prefWidth="182.0" text="Identificador de zona " />
+      <Label layoutX="24.0" layoutY="57.0" prefHeight="26.0" prefWidth="173.0" text="Tipo Operacion" />
+      <Label layoutX="23.0" layoutY="94.0" prefHeight="35.0" prefWidth="174.0" text="Metros Cuadrados" />
+      <Label layoutX="23.0" layoutY="137.0" prefHeight="26.0" prefWidth="174.0" text="Nombre Propietario" />
+      <Label layoutX="341.0" layoutY="21.0" prefHeight="26.0" prefWidth="158.0" text="Identificador de piso" />
+      <Label layoutX="23.0" layoutY="174.0" prefHeight="26.0" prefWidth="131.0" text="Telefono Propietario" />
+      <Label layoutX="25.0" layoutY="207.0" prefHeight="35.0" prefWidth="131.0" text="Precio" />
+      <Label layoutX="24.0" layoutY="245.0" prefHeight="26.0" prefWidth="131.0" text="Reservado" />
+      <TextField fx:id="IDpiso" layoutX="475.0" layoutY="25.0" />
+      <TextField fx:id="idzona" layoutX="166.0" layoutY="25.0" />
+      <TextField fx:id="Metros" layoutX="167.0" layoutY="99.0" />
+      <TextField fx:id="Nombre" layoutX="167.0" layoutY="138.0" />
+      <TextField fx:id="Telefono" layoutX="167.0" layoutY="174.0" />
+      <TextField fx:id="Precio" layoutX="168.0" layoutY="212.0" />
+      <ComboBox fx:id="TipoOperacion" layoutX="168.0" layoutY="58.0" prefWidth="150.0" />
+      <TableView fx:id="tablapiso" layoutX="31.0" layoutY="271.0" prefHeight="200.0" prefWidth="619.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="id_piso" />
+          <TableColumn prefWidth="75.0" text="Metros" />
+            <TableColumn prefWidth="121.60005187988281" text="Nombre Propietario" />
+            <TableColumn prefWidth="141.59991455078125" text="telefono propietario" />
+            <TableColumn prefWidth="94.39996337890625" text="Precio" />
+            <TableColumn prefWidth="109.59991455078125" text="Reservado" />
+        </columns>
+      </TableView>
+      <Button layoutX="23.0" layoutY="481.0" mnemonicParsing="false" onAction="#Guardar" prefHeight="49.0" prefWidth="131.0" text="AGREGAR" />
+      <Button layoutX="177.0" layoutY="481.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="131.0" text="ALQUILER/VENTA" />
+      <Button layoutX="351.0" layoutY="481.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="125.0" text="RESERVAR" />
+      <Button layoutX="520.0" layoutY="480.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="126.0" text="BORRAR" />
+      <ComboBox fx:id="Reservado" layoutX="177.0" layoutY="245.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
