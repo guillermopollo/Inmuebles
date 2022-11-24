@@ -8,7 +8,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.examenfinalfinal.PrimaryController">
    <children>
       <Label layoutX="25.0" layoutY="24.0" prefHeight="26.0" prefWidth="182.0" text="Identificador de zona " />
@@ -28,18 +27,18 @@
       <ComboBox fx:id="TipoOperacion" layoutX="168.0" layoutY="58.0" prefWidth="150.0" />
       <TableView fx:id="tablapiso" layoutX="31.0" layoutY="271.0" prefHeight="200.0" prefWidth="619.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="id_piso" />
-          <TableColumn prefWidth="75.0" text="Metros" />
-            <TableColumn prefWidth="121.60005187988281" text="Nombre Propietario" />
-            <TableColumn prefWidth="141.59991455078125" text="telefono propietario" />
-            <TableColumn prefWidth="94.39996337890625" text="Precio" />
-            <TableColumn prefWidth="109.59991455078125" text="Reservado" />
+          <TableColumn fx:id="col1" prefWidth="75.0" text="id_piso" />
+          <TableColumn fx:id="col2" prefWidth="75.0" text="Metros" />
+            <TableColumn fx:id="col3" prefWidth="121.60005187988281" text="Nombre Propietario" />
+            <TableColumn fx:id="col4" prefWidth="141.59991455078125" text="telefono propietario" />
+            <TableColumn fx:id="col5" prefWidth="94.39996337890625" text="Precio" />
+            <TableColumn fx:id="col6" prefWidth="109.59991455078125" text="Reservado" />
         </columns>
       </TableView>
       <Button layoutX="23.0" layoutY="481.0" mnemonicParsing="false" onAction="#Guardar" prefHeight="49.0" prefWidth="131.0" text="AGREGAR" />
-      <Button layoutX="177.0" layoutY="481.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="131.0" text="ALQUILER/VENTA" />
-      <Button layoutX="351.0" layoutY="481.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="125.0" text="RESERVAR" />
-      <Button layoutX="520.0" layoutY="480.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="126.0" text="BORRAR" />
+      <Button layoutX="177.0" layoutY="481.0" mnemonicParsing="false" onAction="#Mostrar" prefHeight="50.0" prefWidth="131.0" text="ALQUILER/VENTA" />
+      <Button layoutX="351.0" layoutY="481.0" mnemonicParsing="false" onAction="#Mostrar" prefHeight="50.0" prefWidth="125.0" text="RESERVAR" />
+      <Button layoutX="520.0" layoutY="480.0" mnemonicParsing="false" onAction="#Borrar" prefHeight="50.0" prefWidth="126.0" text="BORRAR" />
       <ComboBox fx:id="Reservado" layoutX="177.0" layoutY="245.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

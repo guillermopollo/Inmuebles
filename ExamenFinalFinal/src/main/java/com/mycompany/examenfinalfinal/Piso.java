@@ -10,21 +10,25 @@ package com.mycompany.examenfinalfinal;
  */
 public class Piso {
 
-    public String getIdentificadorZona() {
+    public Piso(int identificadorZona,  String tipoOperacion, int metroCuadrados, String NombrePropietario, int Telefono, int Precio, boolean Reservado) {
+        this.identificadorZona = identificadorZona;
+        this.tipoOperacion = tipoOperacion;
+        this.metroCuadrados = metroCuadrados;
+        this.NombrePropietario = NombrePropietario;
+        this.Telefono = Telefono;
+        this.Precio = Precio;
+        this.Reservado = Reservado;
+    }
+
+    public int getIdentificadorZona() {
         return identificadorZona;
     }
 
-    public void setIdentificadorZona(String identificadorZona) {
+    public void setIdentificadorZona(int identificadorZona) {
         this.identificadorZona = identificadorZona;
     }
 
-    public String getIdentificadorPiso() {
-        return identificadorPiso;
-    }
 
-    public void setIdentificadorPiso(String identificadorPiso) {
-        this.identificadorPiso = identificadorPiso;
-    }
 
     public String getTipoOperacion() {
         return tipoOperacion;
@@ -74,18 +78,8 @@ public class Piso {
         this.Reservado = Reservado;
     }
 
-    public Piso(String identificadorZona, String identificadorPiso, String tipoOperacion, int metroCuadrados, String NombrePropietario, int Telefono, int Precio, boolean Reservado) {
-        this.identificadorZona = identificadorZona;
-        this.identificadorPiso = identificadorPiso;
-        this.tipoOperacion = tipoOperacion;
-        this.metroCuadrados = metroCuadrados;
-        this.NombrePropietario = NombrePropietario;
-        this.Telefono = Telefono;
-        this.Precio = Precio;
-        this.Reservado = Reservado;
-    }
-    String identificadorZona;
-String identificadorPiso;
+  
+   int identificadorZona;
  String tipoOperacion;
  int metroCuadrados;
  String NombrePropietario;
